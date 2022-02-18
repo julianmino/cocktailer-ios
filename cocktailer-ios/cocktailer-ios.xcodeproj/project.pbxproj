@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		4EDB448DAE06DD32AD15C472 /* Pods_cocktailer_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C45BA99CE37E74DCBFF535A /* Pods_cocktailer_iosTests.framework */; };
 		841AB19F27BFE3CA00225E27 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB19E27BFE3CA00225E27 /* R.generated.swift */; };
+		841AB1B227BFEA9D00225E27 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 841AB1B627BFEA9D00225E27 /* Localizable.strings */; };
+		841AB1B327BFEA9D00225E27 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 841AB1B627BFEA9D00225E27 /* Localizable.strings */; };
+		841AB1B427BFEA9D00225E27 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 841AB1B627BFEA9D00225E27 /* Localizable.strings */; };
 		844732B027BFD3AB00F9F1F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844732AF27BFD3AB00F9F1F9 /* AppDelegate.swift */; };
 		844732B427BFD3AB00F9F1F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844732B327BFD3AB00F9F1F9 /* ViewController.swift */; };
 		844732B727BFD3AB00F9F1F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844732B527BFD3AB00F9F1F9 /* Main.storyboard */; };
@@ -46,6 +49,7 @@
 		5034BFF194A6A7BF22B58A82 /* Pods-cocktailer-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cocktailer-ios.debug.xcconfig"; path = "Target Support Files/Pods-cocktailer-ios/Pods-cocktailer-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		6A7F05916B157269EE6ED07F /* Pods-cocktailer-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cocktailer-iosTests.debug.xcconfig"; path = "Target Support Files/Pods-cocktailer-iosTests/Pods-cocktailer-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		841AB19E27BFE3CA00225E27 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		841AB1B527BFEA9D00225E27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		844732AC27BFD3AB00F9F1F9 /* cocktailer-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cocktailer-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		844732AF27BFD3AB00F9F1F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		844732B327BFD3AB00F9F1F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +128,7 @@
 		841AB1A527BFE4FC00225E27 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				841AB1B627BFEA9D00225E27 /* Localizable.strings */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -374,6 +379,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				844732BC27BFD3B000F9F1F9 /* LaunchScreen.storyboard in Resources */,
+				841AB1B227BFEA9D00225E27 /* Localizable.strings in Resources */,
 				844732B927BFD3B000F9F1F9 /* Assets.xcassets in Resources */,
 				844732B727BFD3AB00F9F1F9 /* Main.storyboard in Resources */,
 			);
@@ -383,6 +389,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841AB1B327BFEA9D00225E27 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +397,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841AB1B427BFEA9D00225E27 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,6 +569,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		841AB1B627BFEA9D00225E27 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				841AB1B527BFEA9D00225E27 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		844732B527BFD3AB00F9F1F9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

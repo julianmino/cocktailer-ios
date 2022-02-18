@@ -1,0 +1,22 @@
+platform :ios, '12.0'
+use_frameworks!
+
+target 'cocktailer-ios' do
+
+  # Pods for cocktailer-ios
+
+  pod 'R.swift'
+  pod 'Alamofire'
+  pod 'Kingfisher', '~> 7.0'
+
+
+  target 'cocktailer-iosTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'cocktailer-iosUITests' do
+    # Pods for testing
+  end
+
+end

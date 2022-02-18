@@ -1,0 +1,6 @@
+framework module Pods_cocktailer_ios {
+  umbrella header "Pods-cocktailer-ios-umbrella.h"
+
+  export *
+  module * { export * }
+}

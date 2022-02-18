@@ -138,7 +138,6 @@
 			children = (
 				844732AF27BFD3AB00F9F1F9 /* AppDelegate.swift */,
 				844732BA27BFD3B000F9F1F9 /* LaunchScreen.storyboard */,
-				844732BD27BFD3B000F9F1F9 /* Info.plist */,
 				844732B827BFD3B000F9F1F9 /* Assets.xcassets */,
 				841AB19E27BFE3CA00225E27 /* R.generated.swift */,
 			);
@@ -224,6 +223,7 @@
 				841AB1A427BFE4F200225E27 /* Networking */,
 				841AB1A527BFE4FC00225E27 /* Helpers */,
 				841AB1A627BFE50A00225E27 /* Supporting Files */,
+				844732BD27BFD3B000F9F1F9 /* Info.plist */,
 			);
 			path = "cocktailer-ios";
 			sourceTree = "<group>";
@@ -276,7 +276,7 @@
 			buildConfigurationList = 844732D627BFD3B000F9F1F9 /* Build configuration list for PBXNativeTarget "cocktailer-ios" */;
 			buildPhases = (
 				142DFAEFF82E25E39F38DEFF /* [CP] Check Pods Manifest.lock */,
-				844732DF27BFE10000F9F1F9 /* ShellScript */,
+				844732DF27BFE10000F9F1F9 /* R.swift */,
 				844732A827BFD3AB00F9F1F9 /* Sources */,
 				844732A927BFD3AB00F9F1F9 /* Frameworks */,
 				844732AA27BFD3AB00F9F1F9 /* Resources */,
@@ -448,24 +448,25 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		844732DF27BFE10000F9F1F9 /* ShellScript */ = {
+		844732DF27BFE10000F9F1F9 /* R.swift */ = {
 			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
 			);
 			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
 			);
+			name = R.swift;
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				$SRCROOT/R.generated.swift,
+				"$SRCROOT/cocktailer-ios/Supporting FIles/R.generated.swift",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/cocktailer-ios/Supporting FIles/R.generated.swift\"\n";
 		};
 		853721EB93D98C198F4875DE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;

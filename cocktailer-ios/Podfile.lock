@@ -4,11 +4,13 @@ PODS:
   - R.swift (6.1.0):
     - R.swift.Library (~> 5.3.0)
   - R.swift.Library (5.3.0)
+  - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
   - Alamofire
   - Kingfisher (~> 7.0)
   - R.swift
+  - SVProgressHUD
 
 SPEC REPOS:
   trunk:
@@ -16,13 +18,15 @@ SPEC REPOS:
     - Kingfisher
     - R.swift
     - R.swift.Library
+    - SVProgressHUD
 
 SPEC CHECKSUMS:
   Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
   Kingfisher: 44ed6a8504763f27bab46163adfac83f5deb240c
   R.swift: ec98ff71c4ab2f6fd01dd077e5afd15e63a4834c
   R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: a7ccaab1018bf10f83abaf62dfa4d8077e388e1b
+PODFILE CHECKSUM: ed6af57394a2b00fdf4bacdd512e06b42ad25b64
 
 COCOAPODS: 1.10.0

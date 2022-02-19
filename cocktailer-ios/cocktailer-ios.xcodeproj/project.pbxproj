@@ -31,6 +31,9 @@
 		841AB1D827C1203300225E27 /* PathBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB1D727C1203300225E27 /* PathBuilder.swift */; };
 		841AB1D927C1203300225E27 /* PathBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB1D727C1203300225E27 /* PathBuilder.swift */; };
 		841AB1DA27C1203300225E27 /* PathBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB1D727C1203300225E27 /* PathBuilder.swift */; };
+		841AB1E027C12D0D00225E27 /* ServiceBaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB1DF27C12D0D00225E27 /* ServiceBaseError.swift */; };
+		841AB1E127C12D0D00225E27 /* ServiceBaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB1DF27C12D0D00225E27 /* ServiceBaseError.swift */; };
+		841AB1E227C12D0D00225E27 /* ServiceBaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB1DF27C12D0D00225E27 /* ServiceBaseError.swift */; };
 		844732B027BFD3AB00F9F1F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844732AF27BFD3AB00F9F1F9 /* AppDelegate.swift */; };
 		844732B427BFD3AB00F9F1F9 /* CocktailsVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844732B327BFD3AB00F9F1F9 /* CocktailsVIewController.swift */; };
 		844732B727BFD3AB00F9F1F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844732B527BFD3AB00F9F1F9 /* Main.storyboard */; };
@@ -77,6 +80,7 @@
 		841AB1CF27C11D6400225E27 /* CocktailRealModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailRealModel.swift; sourceTree = "<group>"; };
 		841AB1D327C11DBF00225E27 /* DrinksRealModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksRealModel.swift; sourceTree = "<group>"; };
 		841AB1D727C1203300225E27 /* PathBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathBuilder.swift; sourceTree = "<group>"; };
+		841AB1DF27C12D0D00225E27 /* ServiceBaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceBaseError.swift; sourceTree = "<group>"; };
 		844732AC27BFD3AB00F9F1F9 /* cocktailer-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cocktailer-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		844732AF27BFD3AB00F9F1F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		844732B327BFD3AB00F9F1F9 /* CocktailsVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailsVIewController.swift; sourceTree = "<group>"; };
@@ -217,6 +221,7 @@
 		841AB1AC27BFE6BD00225E27 /* Responses */ = {
 			isa = PBXGroup;
 			children = (
+				841AB1DF27C12D0D00225E27 /* ServiceBaseError.swift */,
 			);
 			path = Responses;
 			sourceTree = "<group>";
@@ -568,6 +573,7 @@
 			files = (
 				841AB1B827BFEB2C00225E27 /* AlertHelper.swift in Sources */,
 				841AB1C027C0AEF300225E27 /* BasePresenter.swift in Sources */,
+				841AB1E027C12D0D00225E27 /* ServiceBaseError.swift in Sources */,
 				844732B427BFD3AB00F9F1F9 /* CocktailsVIewController.swift in Sources */,
 				841AB1D827C1203300225E27 /* PathBuilder.swift in Sources */,
 				844732B027BFD3AB00F9F1F9 /* AppDelegate.swift in Sources */,
@@ -591,6 +597,7 @@
 				841AB1C127C0AEF300225E27 /* BasePresenter.swift in Sources */,
 				841AB1BD27C0AECA00225E27 /* CocktailsPresenter.swift in Sources */,
 				844732C727BFD3B000F9F1F9 /* cocktailer_iosTests.swift in Sources */,
+				841AB1E127C12D0D00225E27 /* ServiceBaseError.swift in Sources */,
 				841AB1D127C11D6400225E27 /* CocktailRealModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -608,6 +615,7 @@
 				841AB1BA27BFEB2C00225E27 /* AlertHelper.swift in Sources */,
 				844732D127BFD3B000F9F1F9 /* cocktailer_iosUITests.swift in Sources */,
 				844732D327BFD3B000F9F1F9 /* cocktailer_iosUITestsLaunchTests.swift in Sources */,
+				841AB1E227C12D0D00225E27 /* ServiceBaseError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

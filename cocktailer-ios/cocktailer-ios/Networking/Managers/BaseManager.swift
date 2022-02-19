@@ -11,7 +11,7 @@ import Alamofire
 protocol BaseManagerDelegate: AnyObject {
     func onStartService()
     func onFinishService()
-    func onError(_ error: Error)
+    func onError(_ error: ServiceBaseError)
 }
 
 class BaseManager {

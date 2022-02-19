@@ -31,6 +31,9 @@
 		841AB1D827C1203300225E27 /* PathBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB1D727C1203300225E27 /* PathBuilder.swift */; };
 		841AB1D927C1203300225E27 /* PathBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB1D727C1203300225E27 /* PathBuilder.swift */; };
 		841AB1DA27C1203300225E27 /* PathBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB1D727C1203300225E27 /* PathBuilder.swift */; };
+		841AB1DC27C12A8000225E27 /* CocktailsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB1DB27C12A8000225E27 /* CocktailsManager.swift */; };
+		841AB1DD27C12A8000225E27 /* CocktailsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB1DB27C12A8000225E27 /* CocktailsManager.swift */; };
+		841AB1DE27C12A8000225E27 /* CocktailsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB1DB27C12A8000225E27 /* CocktailsManager.swift */; };
 		841AB1E027C12D0D00225E27 /* ServiceBaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB1DF27C12D0D00225E27 /* ServiceBaseError.swift */; };
 		841AB1E127C12D0D00225E27 /* ServiceBaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB1DF27C12D0D00225E27 /* ServiceBaseError.swift */; };
 		841AB1E227C12D0D00225E27 /* ServiceBaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB1DF27C12D0D00225E27 /* ServiceBaseError.swift */; };
@@ -80,6 +83,7 @@
 		841AB1CF27C11D6400225E27 /* CocktailRealModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailRealModel.swift; sourceTree = "<group>"; };
 		841AB1D327C11DBF00225E27 /* DrinksRealModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksRealModel.swift; sourceTree = "<group>"; };
 		841AB1D727C1203300225E27 /* PathBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathBuilder.swift; sourceTree = "<group>"; };
+		841AB1DB27C12A8000225E27 /* CocktailsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailsManager.swift; sourceTree = "<group>"; };
 		841AB1DF27C12D0D00225E27 /* ServiceBaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceBaseError.swift; sourceTree = "<group>"; };
 		844732AC27BFD3AB00F9F1F9 /* cocktailer-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cocktailer-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		844732AF27BFD3AB00F9F1F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -197,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				841AB1C327C0AFF100225E27 /* BaseManager.swift */,
+				841AB1DB27C12A8000225E27 /* CocktailsManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -572,6 +577,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				841AB1B827BFEB2C00225E27 /* AlertHelper.swift in Sources */,
+				841AB1DC27C12A8000225E27 /* CocktailsManager.swift in Sources */,
 				841AB1C027C0AEF300225E27 /* BasePresenter.swift in Sources */,
 				841AB1E027C12D0D00225E27 /* ServiceBaseError.swift in Sources */,
 				844732B427BFD3AB00F9F1F9 /* CocktailsVIewController.swift in Sources */,
@@ -591,6 +597,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				841AB1D927C1203300225E27 /* PathBuilder.swift in Sources */,
+				841AB1DD27C12A8000225E27 /* CocktailsManager.swift in Sources */,
 				841AB1C527C0AFF100225E27 /* BaseManager.swift in Sources */,
 				841AB1B927BFEB2C00225E27 /* AlertHelper.swift in Sources */,
 				841AB1D527C11DC000225E27 /* DrinksRealModel.swift in Sources */,
@@ -613,6 +620,7 @@
 				841AB1D627C11DC000225E27 /* DrinksRealModel.swift in Sources */,
 				841AB1C227C0AEF300225E27 /* BasePresenter.swift in Sources */,
 				841AB1BA27BFEB2C00225E27 /* AlertHelper.swift in Sources */,
+				841AB1DE27C12A8000225E27 /* CocktailsManager.swift in Sources */,
 				844732D127BFD3B000F9F1F9 /* cocktailer_iosUITests.swift in Sources */,
 				844732D327BFD3B000F9F1F9 /* cocktailer_iosUITestsLaunchTests.swift in Sources */,
 				841AB1E227C12D0D00225E27 /* ServiceBaseError.swift in Sources */,

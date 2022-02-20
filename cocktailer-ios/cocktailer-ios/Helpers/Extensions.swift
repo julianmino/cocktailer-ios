@@ -32,3 +32,11 @@ extension UIColor {
     }
 }
 
+
+extension UIImageView {
+    func setImage(fromUrl urlString: String) {
+        let url = URL(string: urlString)
+        self.kf.setImage(with: url)
+    }
+}
+

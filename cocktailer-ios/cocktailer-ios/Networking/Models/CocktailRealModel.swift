@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CocktailRealModel: Codable {
+class CocktailRealModel: Codable {
     let name: String
     let imageURL: String
     

@@ -32,6 +32,13 @@ extension UIColor {
     }
 }
 
+extension UILabel {
+    func set(font: UIFont, color: UIColor, align: NSTextAlignment = .left) {
+        self.font = font
+        self.textColor = color
+        self.textAlignment = align
+    }
+}
 
 extension UIView {
     func setBgColor(bgColor: UIColor, alpha: CGFloat) {

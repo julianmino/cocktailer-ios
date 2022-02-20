@@ -15,6 +15,9 @@
 		841AB1B827BFEB2C00225E27 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB1B727BFEB2C00225E27 /* AlertHelper.swift */; };
 		841AB1B927BFEB2C00225E27 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB1B727BFEB2C00225E27 /* AlertHelper.swift */; };
 		841AB1BA27BFEB2C00225E27 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB1B727BFEB2C00225E27 /* AlertHelper.swift */; };
+		841AB1BC27C0AECA00225E27 /* CocktailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB1BB27C0AECA00225E27 /* CocktailsPresenter.swift */; };
+		841AB1BD27C0AECA00225E27 /* CocktailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB1BB27C0AECA00225E27 /* CocktailsPresenter.swift */; };
+		841AB1BE27C0AECA00225E27 /* CocktailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB1BB27C0AECA00225E27 /* CocktailsPresenter.swift */; };
 		841AB1C027C0AEF300225E27 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB1BF27C0AEF300225E27 /* BasePresenter.swift */; };
 		841AB1C127C0AEF300225E27 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB1BF27C0AEF300225E27 /* BasePresenter.swift */; };
 		841AB1C227C0AEF300225E27 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB1BF27C0AEF300225E27 /* BasePresenter.swift */; };

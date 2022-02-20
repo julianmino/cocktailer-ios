@@ -20,15 +20,26 @@ class QueryParamsBuilder {
         }
     }
     
+    private enum Endpoints {
+        case search
+        
+        var value: String {
+            switch self {
+            case .search:
+                return "/search.php"
+            }
+        }
+    }
+    
     static func searchqueryParams(forCocktail cocktailName: String) -> String {
-        return "?\(QueryParams.search(cocktailName))"
+        return "\(Endpoints.search.value)?\(QueryParams.search(cocktailName).value)"
     }
 }
 
 class PathBuilder {
     
     private static var baseURL: String {
-        return "www.thecocktaildb.com/api/json"
+        return "https://www.thecocktaildb.com/api/json"
     }
     
     private static var apiVersion: String {

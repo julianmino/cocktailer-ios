@@ -24,7 +24,7 @@ class CocktailsManager: BaseManager {
     func fetchDrinks(delegate: CocktailManagerDelegate, searchText: String) {
         delegate.onStartService()
         let url = PathBuilder.getCocktailsByName(searchText)
-        AF.request(url).validate().responseDecodable(of: DrinksRealModel.self, completionHandler: { (response) in
+        AF.request(url).validate().responseDecodable(of: CocktailsResponse.self, completionHandler: { (response) in
             switch response.result {
             case let .failure(error):
                 guard let data = response.data, let serviceError = try? JSONDecoder().decode(ServiceBaseError.self, from: data) else {

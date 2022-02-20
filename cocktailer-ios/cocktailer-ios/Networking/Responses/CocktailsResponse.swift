@@ -7,6 +7,10 @@
 
 import Foundation
 
-struct DrinksRealModel: Codable {
+struct CocktailsResponse: Codable {
     let drinks: [CocktailRealModel]
+    
+    enum CodingKeys: String, CodingKey {
+        case drinks
+    }
 }

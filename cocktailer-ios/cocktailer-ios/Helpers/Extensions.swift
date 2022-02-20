@@ -40,3 +40,10 @@ extension UIImageView {
     }
 }
 
+extension UIButton {
+    func set(title: String?, image: UIImage?, color: UIColor) {
+        self.setTitle(title, for: .normal)
+        self.setImage(image, for: .normal)
+        self.tintColor = color
+    }
+}

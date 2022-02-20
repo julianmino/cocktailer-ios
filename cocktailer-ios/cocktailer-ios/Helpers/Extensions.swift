@@ -33,6 +33,26 @@ extension UIColor {
 }
 
 
+extension UIView {
+    func setBgColor(bgColor: UIColor, alpha: CGFloat) {
+        self.backgroundColor = bgColor
+        self.alpha = alpha
+    }
+    
+    func roundBorders(_ value: CGFloat = 10) {
+        self.layer.cornerRadius = value
+    }
+    
+    func circle() {
+        self.layer.cornerRadius = self.frame.size.height / 2
+    }
+    
+    func setBorder(width: CGFloat, color: UIColor) {
+        self.layer.borderWidth = width
+        self.layer.borderColor = color.cgColor
+    }
+}
+
 extension UIImageView {
     func setImage(fromUrl urlString: String) {
         let url = URL(string: urlString)

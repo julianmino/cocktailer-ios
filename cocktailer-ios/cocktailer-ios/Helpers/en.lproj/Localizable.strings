@@ -8,3 +8,7 @@
 
 "error" = "Error";
 "ok" = "Ok";
+
+"Cocktailer" = "Cocktailer";
+"Search for a drink message" = "¡Cheer time! Enter the name of the drink you want to prepare:";
+"Search" = "Search";

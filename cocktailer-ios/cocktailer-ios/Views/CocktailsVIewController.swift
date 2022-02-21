@@ -9,6 +9,12 @@ import UIKit
 
 class CocktailsViewController: BaseViewController {
 
+    @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet private weak var imageView: UIImageView!
+    @IBOutlet private weak var descriptionLabel: UILabel!
+    @IBOutlet private weak var searchTextField: UITextField!
+    @IBOutlet private weak var searchButton: UIButton!
+    
     private var presenter = CocktailsPresenter<CocktailsViewController>()
 
     override func viewDidLoad() {

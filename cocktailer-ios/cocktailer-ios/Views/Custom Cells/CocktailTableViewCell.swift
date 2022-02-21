@@ -21,6 +21,7 @@ class CocktailTableViewCell: UITableViewCell {
     }
     
     private func setup() {
+        selectionStyle = .none
         drinkImage.roundBorders(10)
         chevron.tintColor = .cocktailerPrimary
     }

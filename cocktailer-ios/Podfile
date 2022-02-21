@@ -8,7 +8,7 @@ target 'cocktailer-ios' do
   pod 'R.swift'
   pod 'Alamofire'
   pod 'Kingfisher', '~> 7.0'
-
+  pod 'SVProgressHUD'
 
   target 'cocktailer-iosTests' do
     inherit! :search_paths

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="IngredientAndMeasureTableViewCell" rowHeight="64" id="KGk-i7-Jjw" customClass="IngredientAndMeasureTableViewCell" customModule="cocktailer_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="436" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="436" height="64"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MF1-ee-aTX" userLabel="Ingredient View">
+                        <rect key="frame" x="0.0" y="0.0" width="218" height="64"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URK-Yu-vYP" userLabel="Ingredient Label">
+                                <rect key="frame" x="88" y="21.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="URK-Yu-vYP" firstAttribute="centerY" secondItem="MF1-ee-aTX" secondAttribute="centerY" id="TPp-10-Y7W"/>
+                            <constraint firstItem="URK-Yu-vYP" firstAttribute="centerX" secondItem="MF1-ee-aTX" secondAttribute="centerX" id="oST-fw-yJh"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OE4-j6-5V5" userLabel="Measure View">
+                        <rect key="frame" x="218" y="0.0" width="218" height="64"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yDE-hx-tKw" userLabel="Measure Label">
+                                <rect key="frame" x="88" y="21.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yDE-hx-tKw" firstAttribute="centerX" secondItem="OE4-j6-5V5" secondAttribute="centerX" id="BqZ-Bn-6bm"/>
+                            <constraint firstItem="yDE-hx-tKw" firstAttribute="centerY" secondItem="OE4-j6-5V5" secondAttribute="centerY" id="PPu-6N-Xj4"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="MF1-ee-aTX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="3G5-dv-sxT"/>
+                    <constraint firstAttribute="bottom" secondItem="OE4-j6-5V5" secondAttribute="bottom" id="3iX-OU-vuS"/>
+                    <constraint firstItem="MF1-ee-aTX" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.5" id="3sO-Pp-xuX"/>
+                    <constraint firstAttribute="trailing" secondItem="OE4-j6-5V5" secondAttribute="trailing" id="DVU-zM-yWt"/>
+                    <constraint firstItem="OE4-j6-5V5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="McH-gf-ary"/>
+                    <constraint firstAttribute="bottom" secondItem="MF1-ee-aTX" secondAttribute="bottom" id="lVo-dB-Hzs"/>
+                    <constraint firstItem="OE4-j6-5V5" firstAttribute="width" secondItem="MF1-ee-aTX" secondAttribute="width" id="oJL-ag-hlT"/>
+                    <constraint firstItem="MF1-ee-aTX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="vtr-CW-ZPk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="ingredientLabel" destination="URK-Yu-vYP" id="Rro-am-jOJ"/>
+                <outlet property="ingredientView" destination="MF1-ee-aTX" id="asC-Ao-50m"/>
+                <outlet property="measureLabel" destination="yDE-hx-tKw" id="WWa-6u-A4c"/>
+                <outlet property="measureView" destination="OE4-j6-5V5" id="IZ4-af-rMc"/>
+            </connections>
+            <point key="canvasLocation" x="221.73913043478262" y="74.330357142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

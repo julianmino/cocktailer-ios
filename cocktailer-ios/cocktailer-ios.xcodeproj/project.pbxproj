@@ -58,6 +58,9 @@
 		841AB1FE27C356D700225E27 /* CocktailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841AB1FA27C356D600225E27 /* CocktailTableViewCell.xib */; };
 		841AB1FF27C356D700225E27 /* CocktailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841AB1FA27C356D600225E27 /* CocktailTableViewCell.xib */; };
 		841AB20027C356D700225E27 /* CocktailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841AB1FA27C356D600225E27 /* CocktailTableViewCell.xib */; };
+		841AB20227C368EB00225E27 /* CocktailDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB20127C368EB00225E27 /* CocktailDetailViewController.swift */; };
+		841AB20327C368EB00225E27 /* CocktailDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB20127C368EB00225E27 /* CocktailDetailViewController.swift */; };
+		841AB20427C368EB00225E27 /* CocktailDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB20127C368EB00225E27 /* CocktailDetailViewController.swift */; };
 		841AB20727C36E3700225E27 /* IngredientAndMeasureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB20527C36E3700225E27 /* IngredientAndMeasureTableViewCell.swift */; };
 		841AB20827C36E3700225E27 /* IngredientAndMeasureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB20527C36E3700225E27 /* IngredientAndMeasureTableViewCell.swift */; };
 		841AB20927C36E3700225E27 /* IngredientAndMeasureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB20527C36E3700225E27 /* IngredientAndMeasureTableViewCell.swift */; };
@@ -130,6 +133,7 @@
 		841AB1F527C3541E00225E27 /* CocktailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailsViewController.swift; sourceTree = "<group>"; };
 		841AB1F927C356D600225E27 /* CocktailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailTableViewCell.swift; sourceTree = "<group>"; };
 		841AB1FA27C356D600225E27 /* CocktailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CocktailTableViewCell.xib; sourceTree = "<group>"; };
+		841AB20127C368EB00225E27 /* CocktailDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailDetailViewController.swift; sourceTree = "<group>"; };
 		841AB20527C36E3700225E27 /* IngredientAndMeasureTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientAndMeasureTableViewCell.swift; sourceTree = "<group>"; };
 		841AB20627C36E3700225E27 /* IngredientAndMeasureTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IngredientAndMeasureTableViewCell.xib; sourceTree = "<group>"; };
 		841AB20D27C370C400225E27 /* DetailHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeaderTableViewCell.swift; sourceTree = "<group>"; };
@@ -190,6 +194,7 @@
 				841AB1C727C0B07100225E27 /* BaseViewController.swift */,
 				844732B327BFD3AB00F9F1F9 /* CocktailerVIewController.swift */,
 				841AB1F527C3541E00225E27 /* CocktailsViewController.swift */,
+				841AB20127C368EB00225E27 /* CocktailDetailViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -667,6 +672,7 @@
 				841AB1E427C1313C00225E27 /* CocktailViewModel.swift in Sources */,
 				841AB1F227C21B7400225E27 /* Extensions.swift in Sources */,
 				841AB20F27C370C400225E27 /* DetailHeaderTableViewCell.swift in Sources */,
+				841AB20227C368EB00225E27 /* CocktailDetailViewController.swift in Sources */,
 				841AB1EA27C1DC7A00225E27 /* BaseViewModel.swift in Sources */,
 				841AB1D427C11DC000225E27 /* CocktailsResponse.swift in Sources */,
 				841AB1FB27C356D700225E27 /* CocktailTableViewCell.swift in Sources */,
@@ -694,6 +700,7 @@
 				841AB1F327C21B7400225E27 /* Extensions.swift in Sources */,
 				844732C727BFD3B000F9F1F9 /* cocktailer_iosTests.swift in Sources */,
 				841AB1E527C1313C00225E27 /* CocktailViewModel.swift in Sources */,
+				841AB20327C368EB00225E27 /* CocktailDetailViewController.swift in Sources */,
 				841AB1E127C12D0D00225E27 /* ServiceBaseError.swift in Sources */,
 				841AB20827C36E3700225E27 /* IngredientAndMeasureTableViewCell.swift in Sources */,
 				841AB1D127C11D6400225E27 /* CocktailRealModel.swift in Sources */,
@@ -715,6 +722,7 @@
 				841AB1C227C0AEF300225E27 /* BasePresenter.swift in Sources */,
 				841AB1BA27BFEB2C00225E27 /* AlertHelper.swift in Sources */,
 				841AB1EC27C1DC7A00225E27 /* BaseViewModel.swift in Sources */,
+				841AB20427C368EB00225E27 /* CocktailDetailViewController.swift in Sources */,
 				841AB1DE27C12A8000225E27 /* CocktailsManager.swift in Sources */,
 				841AB1E627C1313C00225E27 /* CocktailViewModel.swift in Sources */,
 				841AB21127C370C400225E27 /* DetailHeaderTableViewCell.swift in Sources */,

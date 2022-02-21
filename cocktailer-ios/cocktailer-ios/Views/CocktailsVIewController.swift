@@ -29,7 +29,6 @@ class CocktailsViewController: BaseViewController {
     private func setup() {
         registerNibs()
         setTableView()
-        navigationController?.title = "Results for '\(searchText)'"
     }
     
     private func registerNibs() {
@@ -45,6 +44,13 @@ class CocktailsViewController: BaseViewController {
     
     func setSearchText(_ newValue: String) {
         searchText = newValue
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let cocktailDetailVC = segue.destination as? CocktailDetailViewController,
+           let cocktail = sender as? CocktailViewModel {
+            cocktailDetailVC.cocktail = cocktail
+        }
     }
 }
 
@@ -69,6 +75,10 @@ extension CocktailsViewController: UITableViewDelegate, UITableViewDataSource {
             return cell
         }
         return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: R.segue.cocktailsViewController.cocktailDetailSegue.identifier, sender: presenter.datasource[indexPath.row])
     }
 }
 

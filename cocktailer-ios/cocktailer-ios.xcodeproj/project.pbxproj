@@ -58,6 +58,24 @@
 		841AB1FE27C356D700225E27 /* CocktailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841AB1FA27C356D600225E27 /* CocktailTableViewCell.xib */; };
 		841AB1FF27C356D700225E27 /* CocktailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841AB1FA27C356D600225E27 /* CocktailTableViewCell.xib */; };
 		841AB20027C356D700225E27 /* CocktailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841AB1FA27C356D600225E27 /* CocktailTableViewCell.xib */; };
+		841AB20727C36E3700225E27 /* IngredientAndMeasureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB20527C36E3700225E27 /* IngredientAndMeasureTableViewCell.swift */; };
+		841AB20827C36E3700225E27 /* IngredientAndMeasureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB20527C36E3700225E27 /* IngredientAndMeasureTableViewCell.swift */; };
+		841AB20927C36E3700225E27 /* IngredientAndMeasureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB20527C36E3700225E27 /* IngredientAndMeasureTableViewCell.swift */; };
+		841AB20A27C36E3700225E27 /* IngredientAndMeasureTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841AB20627C36E3700225E27 /* IngredientAndMeasureTableViewCell.xib */; };
+		841AB20B27C36E3700225E27 /* IngredientAndMeasureTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841AB20627C36E3700225E27 /* IngredientAndMeasureTableViewCell.xib */; };
+		841AB20C27C36E3700225E27 /* IngredientAndMeasureTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841AB20627C36E3700225E27 /* IngredientAndMeasureTableViewCell.xib */; };
+		841AB20F27C370C400225E27 /* DetailHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB20D27C370C400225E27 /* DetailHeaderTableViewCell.swift */; };
+		841AB21027C370C400225E27 /* DetailHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB20D27C370C400225E27 /* DetailHeaderTableViewCell.swift */; };
+		841AB21127C370C400225E27 /* DetailHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB20D27C370C400225E27 /* DetailHeaderTableViewCell.swift */; };
+		841AB21227C370C400225E27 /* DetailHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841AB20E27C370C400225E27 /* DetailHeaderTableViewCell.xib */; };
+		841AB21327C370C400225E27 /* DetailHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841AB20E27C370C400225E27 /* DetailHeaderTableViewCell.xib */; };
+		841AB21427C370C400225E27 /* DetailHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841AB20E27C370C400225E27 /* DetailHeaderTableViewCell.xib */; };
+		841AB21727C3725B00225E27 /* InstructionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB21527C3725B00225E27 /* InstructionsTableViewCell.swift */; };
+		841AB21827C3725B00225E27 /* InstructionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB21527C3725B00225E27 /* InstructionsTableViewCell.swift */; };
+		841AB21927C3725B00225E27 /* InstructionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB21527C3725B00225E27 /* InstructionsTableViewCell.swift */; };
+		841AB21A27C3725B00225E27 /* InstructionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841AB21627C3725B00225E27 /* InstructionsTableViewCell.xib */; };
+		841AB21B27C3725B00225E27 /* InstructionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841AB21627C3725B00225E27 /* InstructionsTableViewCell.xib */; };
+		841AB21C27C3725B00225E27 /* InstructionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841AB21627C3725B00225E27 /* InstructionsTableViewCell.xib */; };
 		844732B027BFD3AB00F9F1F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844732AF27BFD3AB00F9F1F9 /* AppDelegate.swift */; };
 		844732B427BFD3AB00F9F1F9 /* CocktailerVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844732B327BFD3AB00F9F1F9 /* CocktailerVIewController.swift */; };
 		844732B727BFD3AB00F9F1F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844732B527BFD3AB00F9F1F9 /* Main.storyboard */; };
@@ -112,6 +130,12 @@
 		841AB1F527C3541E00225E27 /* CocktailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailsViewController.swift; sourceTree = "<group>"; };
 		841AB1F927C356D600225E27 /* CocktailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailTableViewCell.swift; sourceTree = "<group>"; };
 		841AB1FA27C356D600225E27 /* CocktailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CocktailTableViewCell.xib; sourceTree = "<group>"; };
+		841AB20527C36E3700225E27 /* IngredientAndMeasureTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientAndMeasureTableViewCell.swift; sourceTree = "<group>"; };
+		841AB20627C36E3700225E27 /* IngredientAndMeasureTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IngredientAndMeasureTableViewCell.xib; sourceTree = "<group>"; };
+		841AB20D27C370C400225E27 /* DetailHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		841AB20E27C370C400225E27 /* DetailHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		841AB21527C3725B00225E27 /* InstructionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsTableViewCell.swift; sourceTree = "<group>"; };
+		841AB21627C3725B00225E27 /* InstructionsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstructionsTableViewCell.xib; sourceTree = "<group>"; };
 		844732AC27BFD3AB00F9F1F9 /* cocktailer-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cocktailer-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		844732AF27BFD3AB00F9F1F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		844732B327BFD3AB00F9F1F9 /* CocktailerVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailerVIewController.swift; sourceTree = "<group>"; };
@@ -217,6 +241,12 @@
 			children = (
 				841AB1F927C356D600225E27 /* CocktailTableViewCell.swift */,
 				841AB1FA27C356D600225E27 /* CocktailTableViewCell.xib */,
+				841AB20527C36E3700225E27 /* IngredientAndMeasureTableViewCell.swift */,
+				841AB20627C36E3700225E27 /* IngredientAndMeasureTableViewCell.xib */,
+				841AB20D27C370C400225E27 /* DetailHeaderTableViewCell.swift */,
+				841AB20E27C370C400225E27 /* DetailHeaderTableViewCell.xib */,
+				841AB21527C3725B00225E27 /* InstructionsTableViewCell.swift */,
+				841AB21627C3725B00225E27 /* InstructionsTableViewCell.xib */,
 			);
 			path = "Custom Cells";
 			sourceTree = "<group>";
@@ -459,7 +489,10 @@
 				844732BC27BFD3B000F9F1F9 /* LaunchScreen.storyboard in Resources */,
 				841AB1B227BFEA9D00225E27 /* Localizable.strings in Resources */,
 				841AB1FE27C356D700225E27 /* CocktailTableViewCell.xib in Resources */,
+				841AB21227C370C400225E27 /* DetailHeaderTableViewCell.xib in Resources */,
+				841AB20A27C36E3700225E27 /* IngredientAndMeasureTableViewCell.xib in Resources */,
 				844732B927BFD3B000F9F1F9 /* Assets.xcassets in Resources */,
+				841AB21A27C3725B00225E27 /* InstructionsTableViewCell.xib in Resources */,
 				844732B727BFD3AB00F9F1F9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -468,8 +501,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841AB20B27C36E3700225E27 /* IngredientAndMeasureTableViewCell.xib in Resources */,
+				841AB21327C370C400225E27 /* DetailHeaderTableViewCell.xib in Resources */,
 				841AB1B327BFEA9D00225E27 /* Localizable.strings in Resources */,
 				841AB1FF27C356D700225E27 /* CocktailTableViewCell.xib in Resources */,
+				841AB21B27C3725B00225E27 /* InstructionsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,8 +513,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841AB20C27C36E3700225E27 /* IngredientAndMeasureTableViewCell.xib in Resources */,
+				841AB21427C370C400225E27 /* DetailHeaderTableViewCell.xib in Resources */,
 				841AB1B427BFEA9D00225E27 /* Localizable.strings in Resources */,
 				841AB20027C356D700225E27 /* CocktailTableViewCell.xib in Resources */,
+				841AB21C27C3725B00225E27 /* InstructionsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,10 +660,13 @@
 				841AB1D827C1203300225E27 /* PathBuilder.swift in Sources */,
 				844732B027BFD3AB00F9F1F9 /* AppDelegate.swift in Sources */,
 				841AB19F27BFE3CA00225E27 /* R.generated.swift in Sources */,
+				841AB20727C36E3700225E27 /* IngredientAndMeasureTableViewCell.swift in Sources */,
 				841AB1C827C0B07100225E27 /* BaseViewController.swift in Sources */,
 				841AB1BC27C0AECA00225E27 /* CocktailsPresenter.swift in Sources */,
+				841AB21727C3725B00225E27 /* InstructionsTableViewCell.swift in Sources */,
 				841AB1E427C1313C00225E27 /* CocktailViewModel.swift in Sources */,
 				841AB1F227C21B7400225E27 /* Extensions.swift in Sources */,
+				841AB20F27C370C400225E27 /* DetailHeaderTableViewCell.swift in Sources */,
 				841AB1EA27C1DC7A00225E27 /* BaseViewModel.swift in Sources */,
 				841AB1D427C11DC000225E27 /* CocktailsResponse.swift in Sources */,
 				841AB1FB27C356D700225E27 /* CocktailTableViewCell.swift in Sources */,
@@ -642,8 +684,10 @@
 				841AB1F727C3541E00225E27 /* CocktailsViewController.swift in Sources */,
 				841AB1FC27C356D700225E27 /* CocktailTableViewCell.swift in Sources */,
 				841AB1C527C0AFF100225E27 /* BaseManager.swift in Sources */,
+				841AB21027C370C400225E27 /* DetailHeaderTableViewCell.swift in Sources */,
 				841AB1B927BFEB2C00225E27 /* AlertHelper.swift in Sources */,
 				841AB1D527C11DC000225E27 /* CocktailsResponse.swift in Sources */,
+				841AB21827C3725B00225E27 /* InstructionsTableViewCell.swift in Sources */,
 				841AB1EB27C1DC7A00225E27 /* BaseViewModel.swift in Sources */,
 				841AB1C127C0AEF300225E27 /* BasePresenter.swift in Sources */,
 				841AB1BD27C0AECA00225E27 /* CocktailsPresenter.swift in Sources */,
@@ -651,6 +695,7 @@
 				844732C727BFD3B000F9F1F9 /* cocktailer_iosTests.swift in Sources */,
 				841AB1E527C1313C00225E27 /* CocktailViewModel.swift in Sources */,
 				841AB1E127C12D0D00225E27 /* ServiceBaseError.swift in Sources */,
+				841AB20827C36E3700225E27 /* IngredientAndMeasureTableViewCell.swift in Sources */,
 				841AB1D127C11D6400225E27 /* CocktailRealModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -664,6 +709,7 @@
 				841AB1D227C11D6400225E27 /* CocktailRealModel.swift in Sources */,
 				841AB1FD27C356D700225E27 /* CocktailTableViewCell.swift in Sources */,
 				841AB1BE27C0AECA00225E27 /* CocktailsPresenter.swift in Sources */,
+				841AB20927C36E3700225E27 /* IngredientAndMeasureTableViewCell.swift in Sources */,
 				841AB1D627C11DC000225E27 /* CocktailsResponse.swift in Sources */,
 				841AB1F827C3541E00225E27 /* CocktailsViewController.swift in Sources */,
 				841AB1C227C0AEF300225E27 /* BasePresenter.swift in Sources */,
@@ -671,9 +717,11 @@
 				841AB1EC27C1DC7A00225E27 /* BaseViewModel.swift in Sources */,
 				841AB1DE27C12A8000225E27 /* CocktailsManager.swift in Sources */,
 				841AB1E627C1313C00225E27 /* CocktailViewModel.swift in Sources */,
+				841AB21127C370C400225E27 /* DetailHeaderTableViewCell.swift in Sources */,
 				844732D127BFD3B000F9F1F9 /* cocktailer_iosUITests.swift in Sources */,
 				844732D327BFD3B000F9F1F9 /* cocktailer_iosUITestsLaunchTests.swift in Sources */,
 				841AB1E227C12D0D00225E27 /* ServiceBaseError.swift in Sources */,
+				841AB21927C3725B00225E27 /* InstructionsTableViewCell.swift in Sources */,
 				841AB1F427C21B7400225E27 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

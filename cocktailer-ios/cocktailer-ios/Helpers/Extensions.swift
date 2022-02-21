@@ -11,23 +11,23 @@ import Kingfisher
 
 extension UIColor {
     
-    private static var cocktailerPrimary: UIColor {
-        return UIColor(red: 225/255, green: 73/255, blue: 0, alpha: 1)
+    static var cocktailerPrimary: UIColor {
+        return UIColor(red: 240/255, green: 123/255, blue: 68/255, alpha: 1)
     }
     
-    private static var cocktailerSecondary: UIColor {
+    static var cocktailerSecondary: UIColor {
         return UIColor(red: 133/255, green: 146/255, blue: 166/255, alpha: 1)
     }
     
-    private static var cocktailerTertiary: UIColor {
+    static var cocktailerTertiary: UIColor {
         return UIColor(red: 186/255, green: 60/255, blue: 81/255, alpha: 1)
     }
     
-    private static var cocktailerLightColor: UIColor {
+    static var cocktailerLightColor: UIColor {
         return UIColor(red: 243/255, green: 248/255, blue: 243/255, alpha: 1)
     }
     
-    private static var cocktailerDarkColor: UIColor {
+    static var cocktailerDarkColor: UIColor {
         return UIColor(red: 31/255, green: 20/255, blue: 31/255, alpha: 1)
     }
 }
@@ -68,9 +68,10 @@ extension UIImageView {
 }
 
 extension UIButton {
-    func set(title: String?, image: UIImage?, color: UIColor) {
+    func set(title: String?, image: UIImage?, tintColor: UIColor, bgColor: UIColor = .clear) {
         self.setTitle(title, for: .normal)
         self.setImage(image, for: .normal)
-        self.tintColor = color
+        self.tintColor = tintColor
+        self.backgroundColor = bgColor
     }
 }

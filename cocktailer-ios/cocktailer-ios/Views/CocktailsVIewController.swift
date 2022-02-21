@@ -17,6 +17,8 @@ class CocktailsViewController: BaseViewController {
     
     private var presenter = CocktailsPresenter<CocktailsViewController>()
 
+    private var searchText = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.attach(self)
@@ -71,5 +73,14 @@ extension CocktailsViewController: CocktailsPresenterDelegate {
     }
     
     func getCocktails() {
+    }
+}
+
+extension CocktailsViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        searchText = textField.text ?? ""
+        textField.resignFirstResponder()
+        return true
     }
 }

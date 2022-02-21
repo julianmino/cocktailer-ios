@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Cocktails View Controller-->
+        <!--Cocktailer View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="CocktailsViewController" customModule="cocktailer_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CocktailerViewController" customModule="cocktailer_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -82,6 +82,9 @@
                                         <rect key="frame" x="103.5" y="50" width="207" height="67.5"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="onSearchTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="42H-C1-Mdt"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -117,11 +120,43 @@
                         <outlet property="searchButton" destination="R0U-KC-Co0" id="qb5-Vs-pm6"/>
                         <outlet property="searchTextField" destination="HPL-m8-WoL" id="SPD-OO-w2A"/>
                         <outlet property="titleLabel" destination="ZRO-Qf-Zl6" id="XJf-RW-zxR"/>
+                        <segue destination="830-PY-GGs" kind="show" identifier="CocktailsListSegue" id="qwc-1e-ZwZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="944.92753623188412" y="52.901785714285715"/>
+        </scene>
+        <!--Cocktails View Controller-->
+        <scene sceneID="dYG-WD-4Bh">
+            <objects>
+                <viewController id="830-PY-GGs" customClass="CocktailsViewController" customModule="cocktailer_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hqe-1k-bpf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="akE-Op-gCb">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PXL-ev-Dph"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="akE-Op-gCb" firstAttribute="leading" secondItem="PXL-ev-Dph" secondAttribute="leading" id="PBc-n8-yK4"/>
+                            <constraint firstItem="akE-Op-gCb" firstAttribute="top" secondItem="PXL-ev-Dph" secondAttribute="top" id="PMe-sA-vrd"/>
+                            <constraint firstAttribute="bottom" secondItem="akE-Op-gCb" secondAttribute="bottom" id="vgq-Ch-nRM"/>
+                            <constraint firstItem="PXL-ev-Dph" firstAttribute="trailing" secondItem="akE-Op-gCb" secondAttribute="trailing" id="y2U-It-vNX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="U9v-5Y-tmr"/>
+                    <connections>
+                        <outlet property="tableView" destination="akE-Op-gCb" id="Jbv-Yw-7Bu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TNr-2d-Xjt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2026" y="53"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zAX-gM-AJi">

@@ -1,19 +1,15 @@
 //
-//  ViewController.swift
+//  CocktailsViewController.swift
 //  cocktailer-ios
 //
-//  Created by Julian Miño on 18/02/2022.
+//  Created by Julian Miño on 21/02/2022.
 //
 
 import UIKit
 
 class CocktailsViewController: BaseViewController {
-
-    @IBOutlet private weak var titleLabel: UILabel!
-    @IBOutlet private weak var imageView: UIImageView!
-    @IBOutlet private weak var descriptionLabel: UILabel!
-    @IBOutlet private weak var searchTextField: UITextField!
-    @IBOutlet private weak var searchButton: UIButton!
+    
+    @IBOutlet private weak var tableView: UITableView!
     
     private var presenter = CocktailsPresenter<CocktailsViewController>()
 
@@ -24,37 +20,55 @@ class CocktailsViewController: BaseViewController {
         presenter.attach(self)
         setup()
     }
-
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        presenter.getDrinks(for: searchText)
     }
     
     private func setup() {
-        view.backgroundColor = .cocktailerLightColor
-        titleLabel.set(
-            font: UIFont.systemFont(ofSize: 30, weight: .bold),
-            color: .cocktailerPrimary,
-            align: .center)
-        descriptionLabel.set(
-            font: UIFont.systemFont(ofSize: 18, weight: .semibold),
-            color: .cocktailerDarkColor,
-            align: .center)
-        descriptionLabel.numberOfLines = 0
-        descriptionLabel.adjustsFontSizeToFitWidth = true
-        
-        titleLabel.text = R.string.localizable.cocktailer()
-        imageView.image = R.image.cocktailerIcon()
-        descriptionLabel.text = R.string.localizable.searchForADrinkMessage()
-        
-        searchButton.layoutIfNeeded()
-        searchTextField.returnKeyType = .done
-        searchTextField.delegate = self
-        searchButton.roundBorders(searchButton.frame.height / 2)
-        searchButton.set(
-            title: R.string.localizable.search(),
-            image: nil,
-            tintColor: .cocktailerLightColor,
-            bgColor: .cocktailerPrimary)
+        registerNibs()
+        setTableView()
+        navigationController?.title = "Results for '\(searchText)'"
+    }
+    
+    private func registerNibs() {
+        tableView.register(
+            UINib(nibName: R.nib.cocktailTableViewCell.name, bundle: nil),
+            forCellReuseIdentifier: R.reuseIdentifier.cocktailTableViewCell.identifier)
+    }
+    
+    private func setTableView() {
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
+    
+    func setSearchText(_ newValue: String) {
+        searchText = newValue
+    }
+}
+
+extension CocktailsViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return presenter.datasource.count
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return CocktailTableViewCell.cellHeight
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.cocktailTableViewCell.identifier, for: indexPath) as? CocktailTableViewCell {
+            let item = presenter.datasource[indexPath.row]
+            cell.configure(with: item)
+            return cell
+        }
+        return UITableViewCell()
     }
 }
 
@@ -73,14 +87,6 @@ extension CocktailsViewController: CocktailsPresenterDelegate {
     }
     
     func getCocktails() {
-    }
-}
-
-extension CocktailsViewController: UITextFieldDelegate {
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        searchText = textField.text ?? ""
-        textField.resignFirstResponder()
-        return true
+        tableView.reloadData()
     }
 }

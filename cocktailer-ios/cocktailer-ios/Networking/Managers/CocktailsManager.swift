@@ -28,11 +28,13 @@ class CocktailsManager: BaseManager {
             switch response.result {
             case let .failure(error):
                 guard let data = response.data, let serviceError = try? JSONDecoder().decode(ServiceBaseError.self, from: data) else {
+                    LOG.ERROR(ServiceName.fetchDrinks.value, errorMessage: error.localizedDescription)
                     delegate.onError(ServiceBaseError(error: error))
                     return
                 }
                 delegate.onError(serviceError)
             case let .success(safeResponse):
+                LOG.SUCCESS(ServiceName.fetchDrinks.value)
                 delegate.onFetchDrinks(safeResponse.drinks)
             }
             delegate.onFinishService()

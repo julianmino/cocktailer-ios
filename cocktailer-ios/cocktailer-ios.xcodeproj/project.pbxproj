@@ -79,6 +79,9 @@
 		841AB21A27C3725B00225E27 /* InstructionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841AB21627C3725B00225E27 /* InstructionsTableViewCell.xib */; };
 		841AB21B27C3725B00225E27 /* InstructionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841AB21627C3725B00225E27 /* InstructionsTableViewCell.xib */; };
 		841AB21C27C3725B00225E27 /* InstructionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841AB21627C3725B00225E27 /* InstructionsTableViewCell.xib */; };
+		841AB21E27C3E70800225E27 /* LogHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB21D27C3E70800225E27 /* LogHelper.swift */; };
+		841AB21F27C3E70800225E27 /* LogHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB21D27C3E70800225E27 /* LogHelper.swift */; };
+		841AB22027C3E70800225E27 /* LogHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AB21D27C3E70800225E27 /* LogHelper.swift */; };
 		844732B027BFD3AB00F9F1F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844732AF27BFD3AB00F9F1F9 /* AppDelegate.swift */; };
 		844732B427BFD3AB00F9F1F9 /* CocktailerVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844732B327BFD3AB00F9F1F9 /* CocktailerVIewController.swift */; };
 		844732B727BFD3AB00F9F1F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844732B527BFD3AB00F9F1F9 /* Main.storyboard */; };
@@ -140,6 +143,7 @@
 		841AB20E27C370C400225E27 /* DetailHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailHeaderTableViewCell.xib; sourceTree = "<group>"; };
 		841AB21527C3725B00225E27 /* InstructionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsTableViewCell.swift; sourceTree = "<group>"; };
 		841AB21627C3725B00225E27 /* InstructionsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InstructionsTableViewCell.xib; sourceTree = "<group>"; };
+		841AB21D27C3E70800225E27 /* LogHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogHelper.swift; sourceTree = "<group>"; };
 		844732AC27BFD3AB00F9F1F9 /* cocktailer-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cocktailer-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		844732AF27BFD3AB00F9F1F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		844732B327BFD3AB00F9F1F9 /* CocktailerVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailerVIewController.swift; sourceTree = "<group>"; };
@@ -224,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				841AB1F127C21B7400225E27 /* Extensions.swift */,
+				841AB21D27C3E70800225E27 /* LogHelper.swift */,
 				841AB1B727BFEB2C00225E27 /* AlertHelper.swift */,
 				841AB1B627BFEA9D00225E27 /* Localizable.strings */,
 			);
@@ -678,6 +683,7 @@
 				841AB1FB27C356D700225E27 /* CocktailTableViewCell.swift in Sources */,
 				841AB1C427C0AFF100225E27 /* BaseManager.swift in Sources */,
 				841AB1D027C11D6400225E27 /* CocktailRealModel.swift in Sources */,
+				841AB21E27C3E70800225E27 /* LogHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -700,6 +706,7 @@
 				841AB1F327C21B7400225E27 /* Extensions.swift in Sources */,
 				844732C727BFD3B000F9F1F9 /* cocktailer_iosTests.swift in Sources */,
 				841AB1E527C1313C00225E27 /* CocktailViewModel.swift in Sources */,
+				841AB21F27C3E70800225E27 /* LogHelper.swift in Sources */,
 				841AB20327C368EB00225E27 /* CocktailDetailViewController.swift in Sources */,
 				841AB1E127C12D0D00225E27 /* ServiceBaseError.swift in Sources */,
 				841AB20827C36E3700225E27 /* IngredientAndMeasureTableViewCell.swift in Sources */,
@@ -729,6 +736,7 @@
 				844732D127BFD3B000F9F1F9 /* cocktailer_iosUITests.swift in Sources */,
 				844732D327BFD3B000F9F1F9 /* cocktailer_iosUITestsLaunchTests.swift in Sources */,
 				841AB1E227C12D0D00225E27 /* ServiceBaseError.swift in Sources */,
+				841AB22027C3E70800225E27 /* LogHelper.swift in Sources */,
 				841AB21927C3725B00225E27 /* InstructionsTableViewCell.swift in Sources */,
 				841AB1F427C21B7400225E27 /* Extensions.swift in Sources */,
 			);
